@@ -10,7 +10,7 @@ from shinywidgets import render_plotly
 tips = pd.read_csv("tips.csv")
 ui.include_css("styles.css")
 
-bill_rng = (min(tips.total_bill), max(tips.total_bill))
+bill_rng = (0, 100)
 
 # Add page title and sidebar
 ui.page_opts(title="Restaurant tipping", fillable=True)
